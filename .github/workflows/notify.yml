@@ -12,4 +12,6 @@ jobs:
       with:
         to: ${{ secrets.CHAT }}
         token: ${{ secrets.BOT_TOKEN }}
-        args: The ${{ github.event_name }} event triggered first step.
+        message: |
+          Helmwave v{{ github.ref }} is ready!
+          See more: https://github.com/zhilyaev/helmwave/releases/tag/{{ github.ref }}
