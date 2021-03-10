@@ -19,5 +19,5 @@ jobs:
         to: ${{ secrets.CHAT }}
         token: ${{ secrets.BOT_TOKEN }}
         message: |
-          Helmwave v${{ env.GITHUB_TAG }} is ready!
-          See more: https://github.com/zhilyaev/helmwave/releases/tag/${{ env.GITHUB_TAG }}
+          Helmwave v${GITHUB_TAG} is ready!
+          See more: https://github.com/zhilyaev/helmwave/releases/tag/${GITHUB_TAG}
